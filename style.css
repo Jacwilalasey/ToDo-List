@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Concert One", cursive;
+  font-size: 16px;
+  background-color: #ffd60a;
+}
+
+label  {
+  font-size: x-large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: .2em;
+}
+
+p  {
+  font-size: x-large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: .2em;
+}
+
+#todoform {
+  display: inline-block;
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  padding: 6px;
+  margin-top: 10px;
+  font-size: 1.5em;
+  border: 5px solid #003566;
+  background-color: #ffca3a;
+  border-radius: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #ffca3a;
+}
+
+li {
+  height: 50px;
+  margin: 5px 0;
+  border: 5px solid #003566;
+  border-radius: 20px;
+  color: #000814;
+  font-size: 1.5em;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: bolder;
+}
+
+li:before {
+  content: "\200B";
+  position: absolute;
+}
+
+li::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+li:hover {
+  height: 50px;
+  margin: 5px 0;
+  border: 5px solid #ffc300;
+  background-color: #001d3d;
+  border-radius: 20px;
+  color: #ffd60a;
+  font-size: 1.5em;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+li button {
+  float: right;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  background-color: #ff9500;
+  color: white;
+  font-size: 1em;
+}
+
+li button:hover {
+  background-color: #febc5d;
+}
+
+.todos {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border: 10px solid #000814;
+  border-radius: 20px;
+  padding: 2em;
+  box-shadow: 0px 0px 10px 2.5px #003566;
+  background-color: #ffca3a;
+}
